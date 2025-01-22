@@ -1,137 +1,85 @@
-*nonton video nya sambil baca yg bagian [[#**ok skrg actually belajar**|disini]], cepetin speed aja klo lambat.
--  [use case diagram](https://youtu.be/4emxjxonNRI?si=mm9SGbrsaQwW_Ucd&t=85) 
-- [class diagram](https://youtu.be/6XrL5jXmTwM?si=Xs9Rr48NhkM_2Efu)
-- [state diagram](https://www.youtube.com/watch?v=qICdYjJA-Ps) heres a more[ ribet version](https://www.youtube.com/watch?v=iaX11vYFhZ4)
-- [activity diagram](https://youtu.be/Wf_xlagfHmg?si=t9Q_gTYqlGKwVSwk&t=75)
-- [sequence diagram](https://youtu.be/pCK6prSq8aw?si=ZYj5V9RdhjANJP4H&t=65)
-- ato [himti](https://youtu.be/iZYGGiHflig?feature=shared) if u have trust issues and have the time
-## **1. What Are We Doing?**
+# Artificial Neural Network and Backpropagation
 
-We are **designing a system** by creating **UML (Unified Modeling Language) diagrams** that visually represent different aspects of the system. The goal is to clarify **how the system works**, how users interact with it, and how different components communicate.
+### Problem Example:
+![image](https://github.com/user-attachments/assets/ac422c3a-e56e-4ce2-a073-3dbe887efeb8)
+Diketahui:
 
----
-## **2. What Are the Steps in System Design?**
-### **Step 1: Understanding Requirements** 
-*tbh idk why this one matters, gd tutorial yg ngjarin niqqaer, ntr di bwh jg gw ga jelasin KRN GW GTW APA2 ANGJGGGGGGGGGGGGG*
-- Identify **Functional Requirements** (what the system must do).
-- Identify **Non-Functional Requirements** (how well the system must perform).
-### **Step 2: High-Level Overview (Use Case Diagram)**
-- Shows **who (actors)** interacts with the system and **what actions** they can perform.
-- Helps identify all necessary **features and interactions** before diving into details.
-### **Step 3: System Structure (Class Diagram)**
-- Defines **the objects (classes)** in the system and their **relationships**.
-- Represents **data and operations** that the system must handle.
-### **Step 4: Behavior & States**
-- **State Diagram**: Shows how objects change **state** over time.
-- **Activity Diagrams**: Describe **step-by-step workflows** for key actions like product requests and payments.
-### **Step 5: Interaction (Sequence Diagrams)**
-- Shows **how different parts communicate** in a **step-by-step interaction**.
-- Helps in understanding system **logic and data flow**.
----
-##  **TLDR:**
+W1: 0.15
 
-1. **Tentuin dia functional or no** :
-	![[Pasted image 20250117030621.png]]
-1. **Use Case Diagram** :
-		![[Pasted image 20250117030646.png]]
-1. **Class Diagram** :
-		![[Pasted image 20250117030721.png]]
-1. **State and Activity Diagrams** :
-		![[Pasted image 20250117030742.png]]
-1. **Sequence Diagrams**:
-		![[Pasted image 20250117030758.png]]
----
+W2: 0.4
 
-# **ok skrg actually belajar**
----
-### **STEP 1: Use case diagram:**
-![[Pasted image 20250117033504.png]]
-*note: ini gambar ter simplify sama gw, yg di coret biru gausah di anggep*
-1. **Buat kotak,** ini jd wadah utk "program" kita dn tulis namany di dlm kotak di plg atas
-2. Diluar kotak, **buat stickman di kiri kotak (ini namany actor)** basically user app kita. 
-	- kasi nama. namany g hrs user, bisa customer, buyer, anything. (tp yg general)
-	- *technically, actor ada primary sama secondary:*
-	- *primary: sebagian besar use case terjadi krn dia*
-	- *secondary: ya kebalikanny. (ga wajib ada)*
-1. **Buat oval** (use cases): step by step app ny jalan.
-	- cth m-bca: login, cek saldo, tentuin jmlh transfer, bayar transfer. (**semua diawali kata kerja y nanti**)
-2. **Buat garis** (relationships) dari user ke oval yg dia akan jalanin. garis lurus no panah.
-	- *ada garis2 lain, (bisa aja gakepake) which are:*
-	- *- - -> panah garis putus2: **include** (oval 1 akan selesai klo oval syarat sdh terpenuhi)*
-	- *- - -> panah garis putus2: **extend** (oval 2 kemungkinan terjadi tp ga selalu, habis oval 1)*
----
-### **STEP 2: Class Diagram:**
-![[Pasted image 20250117042528.png]]
-1. Buat tabel 1 kolom 3 baris. paling atas tulisanny classnya
-	1. contoh: user, binatang, rumah, basically anything bro idk
-2. Baris kedua, attributes (kea identifier) baris ke 1.
-	1. Cth utk kelas user: nama, umur, tinggi, email, dst.
-3. Cara nulis baris kedua:
-	1. Atribut pake huruf kecil semua (nama, umur, dst) trs titik 2 and tipe data
-	2. nama: string
-	3. umur: int
-4. Baris tiga: methods:
-	1. Kelas ini bisa diapain aja/ bisa ngapain aja. gampangny, program lu perlu ngapain buat ngedata kelas ini?
-	2. gantiNama(), getUmur(), dst
-5. Visibility: Agak ga penting, kl ga peduli -> semua kecuali nama class, depannya pake tanda `+`
-	1. `+` utk atribut/metode itu dibuat public: alias bisa di akses semua kelas
-	2. `-` private: cuma kelas itu yg bs pake
-	3. `#` protected: ya terbatas, g smua bs pake
-	4. `~` package/default: bs dipake semua kelas yg sepaket (gw g ngerti ini mksdny ap tp ok)
-6. Relationships: perpanah/garisan
-	1. Abstraction: panah dr node baru ke node awal. 
-		1. Artinya node baru ini subclass ny class td. Semua metode & atribut dr class awal ikutan ke subclass.
-	2. Association: Garis (no panah) dr class ke class. 
-		1. misal kelas user-ayamGoreng. (anggep lah ini digarisin y). di garisnya u tulis "makan". Artinya class user makan ayamGoreng. tp si ayamGoreng pny ituanny sendiri kek class biasa. y gt
-	3. Aggregation: Garis trs 1 diamond kopong di ujung nya.
-		1. Dr class 1 ke class 2 artinya class 1 bisa aja bagian dr class 2, tapi bisa juga engga.
-	4. Composition: Garis trs 1 diamond solid di ujungnya.
-		1. Dr class 1 ke class 2 artinya class 1 gabisa exist tanpa class 2. misal toilet gbs exist klo gada ruanganny 🤷‍♀️
-	5. Multiplicity: taro di garisny composisit class itu cm bs ad brp. idk man tulis aj di semua garis 1 gt.
----
+W3: 0.6
 
-### **STEP 3: State Diagram:**
-![[Pasted image 20250117044618.png]]
-*ini contoh tercocok sm dosen gw, ignore bulet yg kopong sm bulet ber X. disitu kurang panahny hrsnya ada tulisan dan hrsnya yg kotak pertama di dua2nya itu jg slh IDK BRO INI ANEH BGT MATAKULIAHNYA GADA YG BENER ANJGGGGGGGGGGGGGGGGGGGGGGGGGGG*
-1. Buat bulet solid: starting state.
-2. Buat rounded square: Ini adalah state (ceritanya status dia skrg kek mana gt)
-	1. Misal, state ny `tercatat`
-3. Dari starting state, buat panah ke state barunya. Tulis keterangan, apa yg bikin dia sampe ke state itu
-	1. Misal, di panah tulisanny `getUsername` ->`[tercatat]` jadi habis getUsername, statusny tercatat. state HARUS kata sifat. Tercatat, terlempar, terklarifikasi, dst. gaboleh "apakah blablabla". Tulisan di panah jg hrs "kata kerja". 
-4. Uh, that's basically it tbh.
-5. Oh, state diagram itu ada banyak. Ada sebanyak class :)  *ini ajaran dosen gw, bs aj ga bener*
-	1. Misal u ada class user, product, belanja. Berarti buat 3 state diagram.
-		1. State utk user: `start --getNama, pilihKepentingan--> [tercatat]` 
-6. KALO DI GOOGLE DAN VIDEO, hrsnya ada end stateny: bulet solid yg dilingkarin.
-	1. tp idk anything dosen gw sampah gw buat kek gt malah disalahin
---- 
+W4: 0.1
 
-### **STEP 4: Activity Diagram:**
-![[Pasted image 20250117045601.png]]
-*mirip flowchart: rounded square/oval=activity, persegi panjang=class/object, diamond=true or false,*
-1. Buat tabel yg misahin siapa yg melakukan proses itu. di contoh b28=org, system=ya sistem
-2. Buat bulet solid(start) dgn panah mengarah ke rounded square/oval (nanti akan jd activity state nya) di tempat siapa yg bakal ngestart programny
-3.  Tulis di oval itu programny ngapain dst
-4. Klo udh selesai, kasih bulet solid yg luarnya dilingkarin lg.
-5. udh lol
----
+W5: 0.21
 
-### **STEP 5: Sequence Diagram**
-![[Pasted image 20250117055804.png]]
-*sambil nonton video y nontonny*
-1. Gambar stickman di kiri(?) idk beda2 di video di suruh gt
-2. Now, buat kotak2 yg isinya semua objek/class yg hrs berinteraksi sm user selama program berjalan
-3. Buatnya berurutan, kiri ke kanan, berdasarkan apa yg dilakuin pertama sm user
-4. Buat lifelines: Garis putus2 lurus ke bawah dari kotak2 objek td
-	1. lifeline ini ceritany sbg penanda, berapa lama waktu yg sdh lewat, atas itu terbaru, makin ke bawah, makin tua (lama).
-5. Buat panah dgn step utk ke objek selanjutnya. Setiap ada panah baru, turun dikit (krn lifeline)
-	1. Panahnya nempel dr garis lifeline objek pertama ke objek selanjutnya
-	2. Di panah, tulis keterangan actionnya apa
-	3. Misal, user --masukin kartu--> ATM
-	4. Utk panah selanjutnya, turun dikit!
-6. Return lines (panah putus2): basically garis "muter balik" yang ke return
-	1. kok di video, yg server ke atm putus2, tapi yang atm ke user engga? karna dia udh "ngereturn" dn skrg dia lagi jalan kaya biasa aja. simpelnya, ***dia cuma putus2 kalo dia garis yg muter balik.***
-7. Alternative frame: uhhhhhh nonton lah video nya cuk menit 4.49
-	1. buat kotak kek di video gt lah, yg atas jika (kondisi) true, yg bawah else
-8. Buat activation boxes: kotakin garis lifeline yang "aktif"
-	1. Y gt ad di video
+W6: 0.31
+
+B1: 1
+
+B2: 1
+
+B3: 1
+
+- Hitunglah output akhir jika input 1 = 1 dan input 2 = 0
+- Hitunglah Error dengan target error = 1
+- Hitunglah Backpropagation dengan target 1
+
+
+## **Hitung Output Akhir**
+
+### **Step 1: Understand the Structure of the Network**
+- **Inputs:** In1 = 1, In2 = 0 
+- **Weights:** W1, W2, W3, W4, W5, W6
+- **Biases:** B1, B2, B3
+- **Hidden layer nodes:** X1, X2
+- **Output node:** Y
+
+![image](https://github.com/user-attachments/assets/03e42488-1f6c-4a41-a5ea-31395281f20a)
+
+### Step 3: Apply Activation Function
+![image](https://github.com/user-attachments/assets/c19562f9-d791-4ff0-a3a6-74271ecb0021)
+
+![image](https://github.com/user-attachments/assets/d58dd7ba-e4cf-4632-8548-cc02229cfa61)
+
+![image](https://github.com/user-attachments/assets/310171fd-409c-43e3-80a1-84b657db3459)
+
+### Step 4: Continue the steps earlier with the next weights until Output.
+`Y output = (X1 × W5) + (X2 × W6) + B3`
+
+`Y output = (0.75991 × 0.21) + (0.832018 × 0.31) + 1`
+
+`Y output = 1.41781658`
+
+Activation function for Y:
+
+![image](https://github.com/user-attachments/assets/d9ff0ad6-34dd-4dda-97a7-ee8315c494ab)
+
+## **Hitung Error:**
+
+![image](https://github.com/user-attachments/assets/5a360acd-d1e2-4537-bec7-e78976858f62)
+
+- Y predicted = Output tadi
+- Y target = Target error (from soal, dlm case ini 1)
+
+![image](https://github.com/user-attachments/assets/88bc4096-e7a2-4e35-833a-ae617b99d184)
+
+![image](https://github.com/user-attachments/assets/4b2db703-1e5f-47d6-84ca-77b58354186d)
+
+## Hitung Backpropagation:
+
+![image](https://github.com/user-attachments/assets/881ffc60-3b43-471d-aae0-e6db31f68bd9)
+
+- Y predicted = Y output tadi (Yang pertama diitung diatas)
+- Y target = target value (dr soal, dlm case ini 1)
+
+![image](https://github.com/user-attachments/assets/dba1eab5-92a8-460c-af93-9f552580e0f9)
+
+_Yes, dikurangin doang. Depannya sama dengan is ga guna idk_
+
+the rest? idk yet ga ngerti jir
+
+
+
+
