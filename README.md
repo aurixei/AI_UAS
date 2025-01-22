@@ -1,14 +1,8 @@
-# halo
+# hi
 
-ya gt lah
+i might die
 
-mff suram
-
-tp ga suram bgt kok
-
-tp yh
-
-thx for reading ig
+don't talk to me fuck u (jk)
 
 go here dude idk
 - [k-means](https://github.com/aurixei/AI_UAS/blob/main/K-Means.md)
