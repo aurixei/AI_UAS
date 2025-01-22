@@ -40,6 +40,7 @@ B3: 1
 
 ### Step 3: Apply Activation Function
 ![image](https://github.com/user-attachments/assets/c19562f9-d791-4ff0-a3a6-74271ecb0021)
+_(e ada di kalkulator, biasanya sebelah pi)_
 
 ![image](https://github.com/user-attachments/assets/d58dd7ba-e4cf-4632-8548-cc02229cfa61)
 
