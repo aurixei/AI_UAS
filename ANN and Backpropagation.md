@@ -81,6 +81,17 @@ _Yes, dikurangin doang. Depannya sama dengan is ga guna idk_
 
 the rest? idk yet ga ngerti jir
 
+## OK so, different source here (Still Backpropagation):
 
+Here's the soal and the already calculated outputs (this case asks for a target of 0,5):
 
+![image](https://github.com/user-attachments/assets/08bfb416-805e-4226-b379-318220b75edd)
 
+### Here are the formulas and the explanations:
+
+![image](https://github.com/user-attachments/assets/56f48d57-ed11-4f94-83fd-a348140e41b4)
+
+![image](https://github.com/user-attachments/assets/f61174e4-dada-4599-bebe-b142bcff8553) 
+
+gw cape jing dahlah lu nonton 
+[ini aj](https://www.youtube.com/watch?v=tUoUdOdTkRw)
