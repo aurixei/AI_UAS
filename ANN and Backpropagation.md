@@ -77,9 +77,8 @@ Activation function for Y:
 
 ![image](https://github.com/user-attachments/assets/dba1eab5-92a8-460c-af93-9f552580e0f9)
 
-_Yes, dikurangin doang. Depannya sama dengan is ga guna idk_
+_Yes, dikurangin doang._
 
-the rest? idk yet ga ngerti jir
 
 ## OK so, different source here (Still Backpropagation):
 
@@ -93,5 +92,5 @@ Here's the soal and the already calculated outputs (this case asks for a target 
 
 ![image](https://github.com/user-attachments/assets/f61174e4-dada-4599-bebe-b142bcff8553) 
 
-gw cape jing dahlah lu nonton 
-[ini aj](https://www.youtube.com/watch?v=tUoUdOdTkRw)
+not clear enough? watch 
+[this](https://www.youtube.com/watch?v=tUoUdOdTkRw)
