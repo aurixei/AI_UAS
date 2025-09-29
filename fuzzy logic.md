@@ -9,9 +9,9 @@ JADI:
 - semakin rendah, semakin tua
 - ==> semakin deket ke 1; semakin bener statement itu. semakin deket ke 0; semakin salah statementnya
 
-yh drpd fucking ribet ini aj lgsg:
+let's jump right in, shall we?
 
-# **Contoh soal and pengerjaan kiddos**
+# **Contoh soal and pengerjaan**
 ![image](https://github.com/user-attachments/assets/e3274c19-be52-4ec0-a1b5-495eb3f94c2e)
 
 From this soal, we can conclude:
@@ -21,7 +21,7 @@ From this soal, we can conclude:
 - Persediaan tersedikit: 100
 - Produksi terbanyak: 7000
 - Produksi tersedikit: 2000
-- Dan peraturan2 di soal, y baca lah jir malas gw ketik ulang
+- Dan peraturan2 di soal
 - **Jika permintaan 4000, persediaan 300, berapa yang hrs diproduksi?**
 
 ### **Step 1: gambar grafik**
@@ -38,25 +38,24 @@ From this soal, we can conclude:
 ### **Membuat functions (rumus2)**
 ![image](https://github.com/user-attachments/assets/ee78e5d4-a67b-4ea1-91f5-1ad4ae0a5b9f)
 
-- Mturun[x] itu hrsnya μ yg artinya keanggotaan grafik turun untuk x. sisanya u pada smart ppl u can think
+- Mturun[x] itu hrsnya μ yg artinya keanggotaan grafik turun untuk x. 
 - Baris pertama artinya keanggotaan = 1, jika x lebih kecil sama dgn 1000 -> artinya permintaan TURUN
-- keanggotaan = (yg di gambar gw mls ngetik ulang baris 2), jika x diantara 1000 dan 5000
+- keanggotaan = (rules mentioned in the picture), jika x diantara 1000 dan 5000
 - keanggotaan = 0, jika x lebih besar dari 5000 -> artinya permintaan TIDAK TURUN
 
 ![image](https://github.com/user-attachments/assets/49597da6-0387-4e75-96ac-51c79cda861c)
 
-- the rest u understand la
 
-### sabar, dapet rumus2 itu gimana anjg?
+### sabar, dapet rumus2 itu gimana??
 _gini_
 
 ![image](https://github.com/user-attachments/assets/92b25f36-d70c-402a-9e82-653618d89386)
 
 - untuk grafik turun = batas bawah dikurang x
-- X apaann anjgg? X itu titik yang akan ditanya, dlm case soal kita, permintaan 4000 yg ditanya. so x nya disini 4000
+- X apaa? X itu titik yang akan ditanya, dlm case soal kita, permintaan 4000 yg ditanya. so x nya disini 4000
 - di contoh itu angkanya beda sm yg soal kita ya.
 
-### **Ok, now lanjut ke grafik persediaan dan produksi (dpt dr mana?? soal jing)**
+### **Ok, now lanjut ke grafik persediaan dan produksi (dpt dr mana?? dari soal guys)**
 
 ![image](https://github.com/user-attachments/assets/7e5f6cc0-2a27-4044-9ae5-e78846626619)
 _ini banyak yg tbtb dari y sma z tbtb jadi x itu TYPO ya. hrsnya tetep ikut_
@@ -96,7 +95,7 @@ And now, refer back to rules di soal:
 ### **Last, Defuzzifikasi**
 ![image](https://github.com/user-attachments/assets/e145a5fc-156d-4cca-a449-1804dbf8a972)
 
-_What tf does that mean bro?_
+_What does that mean bro?_
 
 - Angka2 per rule yg td kita pilih(yg pilih terkecil)
 - Dikali hasil Zn yg pake rumus produksi (yg td diatas dihitung tiap R)
